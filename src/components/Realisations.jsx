@@ -1,6 +1,13 @@
-import React from 'react';
+import React from "react";
 
 function Realisations() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/documents/rapport.pdf"; // chemin vers ton PDF dans public/documents/
+    link.download = "rapport.pdf";        // nom du fichier téléchargé
+    link.click();
+  };
+
   return (
     <section id="actions" className="bg-white py-16 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative">
@@ -38,7 +45,10 @@ function Realisations() {
             Ces actions ont été rendues possibles grâce à <span className="text-emerald-700 font-medium">l’engagement personnel</span> de notre présidente et au soutien de généreux <span className="text-emerald-600 font-medium">membres et partenaires</span>.
           </p>
 
-          <button className="border border-emerald-600 text-emerald-700 px-6 py-2 rounded hover:bg-emerald-600 hover:text-white transition font-medium">
+          <button
+            onClick={handleDownload}
+            className="border border-emerald-600 text-emerald-700 px-6 py-2 rounded hover:bg-emerald-600 hover:text-white transition font-medium"
+          >
             Voir plus
           </button>
         </div>
@@ -48,4 +58,3 @@ function Realisations() {
 }
 
 export default Realisations;
-
