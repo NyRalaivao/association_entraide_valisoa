@@ -83,7 +83,7 @@ export default function Carousel() {
               Récompenses symboliques pour les élèves ayant passé le <span className="font-medium text-emerald-600">CEPE</span>.
             </li>
             <li>
-              <span className="font-medium text-emerald-600">Parrainage actif</span> de 20 enfants pour leur permettre de poursuivre leur scolarité dans de bonnes conditions.
+              <span className="font-medium text-emerald-600">Parrainage actif</span> de 40 enfants pour leur permettre de poursuivre leur scolarité dans de bonnes conditions.
             </li>
           </ul>
           
