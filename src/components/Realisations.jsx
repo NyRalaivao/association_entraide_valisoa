@@ -3,8 +3,8 @@ import React from "react";
 function Realisations() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/documents/rapport.pdf"; // chemin vers ton PDF dans public/documents/
-    link.download = "rapport.pdf";        // nom du fichier téléchargé
+    link.href = "/documents/plaquette_association_valisoa.pdf"; // chemin vers ton PDF dans public/documents/
+    link.download = "plaquette_association_valisoa.pdf";        // nom du fichier téléchargé
     link.click();
   };
 
@@ -49,7 +49,7 @@ function Realisations() {
             onClick={handleDownload}
             className="border border-emerald-600 text-emerald-700 px-6 py-2 rounded hover:bg-emerald-600 hover:text-white transition font-medium"
           >
-            Voir plus
+            Télécharger pour voir plus
           </button>
         </div>
       </div>
